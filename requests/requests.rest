@@ -1,3 +1,4 @@
+###
 GET http://localhost:3003/api/blogs
 
 ###
@@ -9,5 +10,18 @@ Content-Type: application/json
   "title": "NodeJS is crazy",
   "author": "Tomas Carrizo",
   "url": "link to the blog",
-  "likes": 121 
+  "likes": 121
+}
+
+###
+
+DELETE http://localhost:3003/api/blogs/:id
+
+###
+
+PUT http://localhost:3003/api/blogs/65b454be751dd2347b74c6ac
+Content-Type: application/json
+
+{
+  "likes": 122
 }
