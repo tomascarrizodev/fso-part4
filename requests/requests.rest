@@ -5,23 +5,51 @@ GET http://localhost:3003/api/blogs
 
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhcmdhbiIsImlkIjoiNjViODFhNWY5YzA5MDUzMDc2MjE3ODM3IiwiaWF0IjoxNzA2NzQ5NDU2LCJleHAiOjE3MDY3NDk2MzZ9.bC2dVztrx9ZkzdY7eiuD3hw1JjiVCL4AbdcVVzWvTwc
 
 {
-  "title": "NodeJS is crazy",
-  "author": "Tomas Carrizo",
+  "title": "Golf it con la RATA de willy",
+  "author": "Fargan y Willyrex",
   "url": "link to the blog",
-  "likes": 121
+  "likes": 1212
 }
 
 ###
 
-DELETE http://localhost:3003/api/blogs/:id
+DELETE http://localhost:3003/api/blogs/65baee2272ddba0a7449a264
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhcmdhbiIsImlkIjoiNjViODFhNWY5YzA5MDUzMDc2MjE3ODM3IiwiaWF0IjoxNzA2NzQ5NDU2LCJleHAiOjE3MDY3NDk2MzZ9.bC2dVztrx9ZkzdY7eiuD3hw1JjiVCL4AbdcVVzWvTwc
 
 ###
 
-PUT http://localhost:3003/api/blogs/65b454be751dd2347b74c6ac
+PUT http://localhost:3003/api/blogs/65baea4f433b038852f0a991
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhcmdhbiIsImlkIjoiNjViODFhNWY5YzA5MDUzMDc2MjE3ODM3IiwiaWF0IjoxNzA2NzQ4NDcwfQ.r0MQeQ-GxhqCW6jMfYntLYn6eRISksLRszjSpwEm8g0
 
 {
   "likes": 122
+}
+
+###
+
+GET http://localhost:3003/api/users
+
+###
+
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "fargan",
+  "password": "rata",
+  "name": "David"
+}
+
+###
+
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "fargan",
+  "password": "rata" 
 }
